@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,900&family=Ubuntu:wght@500&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.Main-Title{
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(17, 126, 75);
+}

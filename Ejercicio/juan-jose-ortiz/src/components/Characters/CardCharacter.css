@@ -1,0 +1,43 @@
+
+.Card-Container {
+    border: 1px solid #9cc0b9;
+    border-radius: 2px;
+  }
+  
+  .Card-Container--Title {
+    margin-top: 15px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .Card-Container--Body{
+      padding: 10px;
+      font-weight: 400;
+  }
+  .Card-Container--Body span{
+      font-weight: 700;
+      color: rgb(17, 126, 75);
+      margin-right: 5px;
+  }
+  .Card-Container--Body p{
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: 0px;
+      margin: 0px;
+  }
+
+  .IconStatus--alive{
+      color: #138d2e;
+
+  }
+  .IconStatus--unknown{
+    color: #747373;
+
+  }
+  .IconStatus--dead{
+    color: #8d1313;
+
+  }
