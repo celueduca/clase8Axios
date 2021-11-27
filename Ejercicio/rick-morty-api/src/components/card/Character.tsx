@@ -22,7 +22,7 @@ const DetailCaracters = () => {
   useEffect(() => {
     loadCharacter();
   }, []);
-  const { name, id, image, gender,status,species,origin,type,location} = char;
+  const { name, id, image, gender,status,species,origin,episode,location} = char;
   return (
     <>
     <Layout>
@@ -45,7 +45,21 @@ const DetailCaracters = () => {
                 </li>
                 <li className="list-group-item">
                   <h4>Status </h4>
-                  <p className="card-text mb-2">{status}</p>
+                    {status === "Alive" ? (
+              <>
+                <div className=" badge bg-success fs-5">{status}</div>
+              </>
+            ) : status === "unknown" ? (
+              <>
+                <div className="badge bg-secondary  fs-5">{status}</div>
+
+              </>
+            ) : (
+              <>
+                <div className="badge bg-danger fs-5">{status}</div>
+              </>
+            )}
+
                   <hr/>
                 </li>
                 <li className="list-group-item">
@@ -55,17 +69,13 @@ const DetailCaracters = () => {
                 </li>
                 <li className="list-group-item">
                   <h4>Origin</h4>
-                  <p className="card-text mb-2">{}</p>
+                  <p className="card-text mb-2">{origin?.name}</p>
                   <hr/>
                 </li>
-                <li className="list-group-item">
-                  <h4>Type </h4>
-                  <p className="card-text mb-2">{type}</p>
-                  <hr/>
-                </li>
+               
                 <li className="list-group-item">
                   <h4>Location </h4>
-                  <p className="card-text mb-2">{}</p>
+                  <p className="card-text mb-2">{location?.name}</p>
                   <hr/> 
                </li>
               </ul>

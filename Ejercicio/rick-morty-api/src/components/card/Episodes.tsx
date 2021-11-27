@@ -1,5 +1,5 @@
 import React from 'react'
-
+import image from "../img/banner.jpg";
 interface Props {
    episodes:Episodes[],
   
@@ -14,16 +14,14 @@ interface Episodes {
     return (
        <>
           {episodes.map(({air_date,id,name,episode}: Episodes) => (
-           <div className="card" key={id}>
+            <div className="col-6 mt-5 col-md-4 rotate col-lg-2 hover-episode " key={id}>
+              <img src={image} className=" card-img-top" alt="..." />
 
-           <div className="card-body" >
-             <h5 className="card-title">{name}</h5>
-             <p className="card-text">{episode}</p>
-             <p className="card-text">{air_date}</p>
-
-
-           </div>
-           </div>
+            <h5  className="text-color-brand card-title">
+              {episode}
+            </h5>
+            <p className=" text-color-brand card-text">{name}</p>
+            </div>
           ))}
        </>
     )

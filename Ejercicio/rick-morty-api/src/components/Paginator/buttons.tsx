@@ -24,7 +24,6 @@ const Buttons = ({
         nextPage = actualPageParse + 1;
       }
     } else {
-      console.log("aqui");
       if (actualPageParse > 1) {
         nextPage = actualPageParse - 1;
       }

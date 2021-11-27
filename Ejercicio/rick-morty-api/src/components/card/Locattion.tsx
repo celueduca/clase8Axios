@@ -1,4 +1,6 @@
 import React from 'react'
+import image from "../img/Home-removebg-preview.png";
+
 interface Props {
    locations:Location[],
   
@@ -13,14 +15,14 @@ interface Location {
     return (
        <>
           {locations.map(({type,id,name,dimension}: Location) => (
-           <div className="card" key={id}>
-
-           <div className="card-body" >
-             <h5 className="card-title">{name}</h5>
-             <p className="card-text">{type}</p>
-
-           </div>
-           </div>
+                <div className="col-6 mt-5 col-md-4 rotate col-lg-2 hover-episode " key={id}>
+                <img src={image} className=" card-img-top" alt="..." />
+  
+              <h5  className="text-color-brand card-title">
+                {name}
+              </h5>
+              <p className=" text-color-brand card-text">{dimension}</p>
+              </div>
           ))}
        </>
     )
