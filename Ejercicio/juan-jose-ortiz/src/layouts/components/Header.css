@@ -1,0 +1,50 @@
+
+.Header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.Header-Navbar{
+    padding: 20px;
+    font-size: 30px;
+    background: #1abc9c;
+}
+
+.Header-Navbar--list{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Header-Navbar--list-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 1s ;
+}
+.Header-Navbar--list-link:after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .8s ease, background-color .5s ease;
+}
+.Header-Navbar--list-link:hover {
+    color: #213330;
+    font-weight: bold;
+ }
+.Header-Navbar--list-link:hover:after {
+    width: 100%;
+    background: #213330;
+    transition: 1200ms;
+}
+

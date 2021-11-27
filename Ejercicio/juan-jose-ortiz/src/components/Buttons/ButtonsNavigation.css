@@ -1,0 +1,124 @@
+.Container-Buttons {
+  width: 100%;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+/* Next Buttons */
+
+.Buttons--Next {
+  position: relative;
+  margin: auto;
+  padding: 8px 6px;
+  transition: all 0.2s ease;
+  border: none;
+  font-size: 14px;
+  background: none;
+}
+
+.Buttons--Next:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 2%;
+  height: 35px;
+  transition: all 0.3s ease;
+}
+
+.Buttons--Next span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #23673d;
+}
+
+.Buttons--Next i {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #217733;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.Buttons--Next:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.Buttons--Next:hover svg {
+  transform: translateX(0);
+}
+
+.Buttons--Next:active {
+  transform: scale(0.95);
+}
+/* Back STYLES */
+.Buttons--Back {
+  position: relative;
+  margin: auto;
+  padding: 8px 6px;
+  transition: all 0.2s ease;
+  border: none;
+  font-size: 14px;
+  background: none;
+}
+
+.Buttons--Back:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  
+  width: 2%;
+  height: 35px;
+  transition: all 0.3s ease;
+}
+
+.Buttons--Back span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #23673d;
+}
+
+.Buttons--Back i {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #217733;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.Buttons--Back:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.Buttons--Back:hover svg {
+  transform: translateX(0);
+}
+
+.Buttons--Back:active {
+  transform: scale(0.95);
+}
