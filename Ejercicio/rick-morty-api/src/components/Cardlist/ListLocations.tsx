@@ -41,7 +41,7 @@ const Locations = () => {
       <Layout>
         <div className="hero">
           <div className="wrapper-episode">
-            <img src={footer} alt="Cargando imagen..." />
+            <img className="Logo-location" src={footer} alt="Cargando imagen..." />
           </div>
           <div className="container">
             <div className="row row-cols-1 row-cols-md-1">
