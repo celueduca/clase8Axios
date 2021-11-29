@@ -2,6 +2,12 @@
 .Card-Container {
     border: 1px solid #9cc0b9;
     border-radius: 2px;
+    box-shadow: 2px 2px 8px -2px #319915;
+  }
+
+  .Card-image:hover{
+    transform: scaleX(1.02);
+    transition: 900ms;
   }
   
   .Card-Container--Title {

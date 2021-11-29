@@ -1,4 +1,4 @@
-export interface ILocation {
+export interface IEpisodes {
   id: number;
   name: string;
   air_date: string;

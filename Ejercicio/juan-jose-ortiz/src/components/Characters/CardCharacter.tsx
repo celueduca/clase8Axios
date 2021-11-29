@@ -10,7 +10,7 @@ const CardCharacter = ({ character }: Props) => {
     <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
       <div className="Card-Container">
         <img
-          className="card-img-top"
+          className="card-img-top Card-image"
           src={character.image}
           alt={`${character.name}`}
         ></img>
