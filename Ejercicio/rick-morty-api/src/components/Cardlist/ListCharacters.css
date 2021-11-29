@@ -1,0 +1,221 @@
+.button {
+  border: none;
+  background: none;
+}
+.text-color {
+  color: #fff;
+}
+.pagination {
+  margin-bottom: 0 !important;
+}
+.hover-episode img {
+  border-radius: 22em;
+
+  transition: all 300ms;
+}
+
+.hover-episode:hover img {
+  border-radius: 22em;
+  transform: scale(1.3) scale(1);
+}
+
+.hover-episode h5,
+p {
+  color: white;
+  transition: all 600ms cubic-bezier(1, 0, 0, 1);
+}
+
+.hover-episode:hover h5 {
+  background: #56b4d3;
+  background-size: 50%;
+  border-radius: 1em;
+  transform: translate(0%, -200%) scale(1);
+}
+.hover-episode:hover p {
+  background: #56b4d3;
+  border-radius: 2em;
+  transform: translate(0%, -100%) scale(1);
+}
+.hover-episode:before,
+.hover-episode:after {
+  background: black;
+  transition: all 600ms cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+}
+.hero {
+  font-family: "Oxygen", sans-serif;
+  height: 100%;
+  background: #348f50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #56b4d3,
+    #348f50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #56b4d3,
+    #348f50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hover img {
+  border-radius: 22em;
+
+  transition: all 300ms;
+}
+
+.hover:hover img {
+  border-radius: 22em;
+  transform: scale(1.3) scale(1);
+}
+
+.hover h5,
+p {
+  color: white;
+  transition: all 600ms cubic-bezier(1, 0, 0, 1);
+}
+
+.hover:hover h5 {
+  background: #56b4d3;
+  background-size: 50%;
+  border-radius: 1em;
+  transform: translate(0%, -200%) scale(1);
+}
+.hover:hover p {
+  background: #56b4d3;
+  border-radius: 2em;
+  transform: translate(0%, -150%) scale(1);
+}
+.hover:before,
+.hover:after {
+  background: black;
+  transition: all 600ms cubic-bezier(1, 0, 0, 1);
+  z-index: 1;
+}
+
+.list-group-item {
+  position: relative;
+  display: inline-flex;
+  padding: 0.5rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+.hover:before {
+  transform: rotate(45deg) translateY(-550px) translateX(0px);
+}
+
+.hover:after {
+  transform: rotate(45deg) translateY(550px) translateX(-60px);
+}
+
+.hover:hover:before {
+  transform: rotate(45deg) translateY(-240px) translateX(0px);
+}
+
+.hover:hover:after {
+  transform: rotate(45deg) translateY(180px) translateX(-80px);
+}
+.wrapper {
+  width: 100%;
+  height: 8em;
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Logo-location {
+    animation: zoomIn 0.5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+  }
+}
+
+@keyframes zoomIn {
+  100% {
+    transform: scale(1.16, 1.16);
+  }
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top top;
+}
+.wrapper-episode {
+  width: 100%;
+  height: 10em;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.wrapper-episode img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top top;
+}
+.button span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.button .fas {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.button:hover .fas {
+  transform: translateX(0);
+}
+
+.button:active .fas {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+.fa-chevron-right {
+  transform: translate(30);
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.button:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
